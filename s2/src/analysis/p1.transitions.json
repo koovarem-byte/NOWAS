@@ -1,0 +1,44 @@
+{
+ "file": "p1.mp4",
+ "duration": 44.2,
+ "changes": 7,
+ "changes_per_sec": 0.16,
+ "avg_hold_sec": 5.53,
+ "max_hold_sec": 22.13,
+ "types": {
+  "cut": 3,
+  "dissolve": 0,
+  "fast-move": 4
+ },
+ "first_change_at": 22.13,
+ "events": [
+  {
+   "t": 22.13,
+   "type": "cut"
+  },
+  {
+   "t": 22.63,
+   "type": "fast-move"
+  },
+  {
+   "t": 26.1,
+   "type": "cut"
+  },
+  {
+   "t": 26.5,
+   "type": "fast-move"
+  },
+  {
+   "t": 37.23,
+   "type": "cut"
+  },
+  {
+   "t": 37.7,
+   "type": "fast-move"
+  },
+  {
+   "t": 38.37,
+   "type": "fast-move"
+  }
+ ]
+}

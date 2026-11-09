@@ -1,0 +1,52 @@
+[vost#0:0/rawvideo @ 0x5615aa71ce40] Error submitting a packet to the muxer: Broken pipe
+[out#0/rawvideo @ 0x5615aa717780] Error muxing a packet
+[out#0/rawvideo @ 0x5615aa717780] Error writing trailer: Broken pipe
+[out#0/rawvideo @ 0x5615aa717780] Error closing file: Broken pipe
+[vost#0:0/rawvideo @ 0x55e5c24fbe40] Error submitting a packet to the muxer: Broken pipe
+[out#0/rawvideo @ 0x55e5c24f6780] Error muxing a packet
+[out#0/rawvideo @ 0x55e5c24f6780] Error writing trailer: Broken pipe
+[out#0/rawvideo @ 0x55e5c24f6780] Error closing file: Broken pipe
+[vost#0:0/rawvideo @ 0x563d59c1de40] Error submitting a packet to the muxer: Broken pipe
+[out#0/rawvideo @ 0x563d59c18780] Error muxing a packet
+[out#0/rawvideo @ 0x563d59c18780] Error writing trailer: Broken pipe
+[out#0/rawvideo @ 0x563d59c18780] Error closing file: Broken pipe
+[vost#0:0/rawvideo @ 0x56098c160e40] Error submitting a packet to the muxer: Broken pipe
+[out#0/rawvideo @ 0x56098c15b780] Error muxing a packet
+[out#0/rawvideo @ 0x56098c15b780] Error writing trailer: Broken pipe
+[out#0/rawvideo @ 0x56098c15b780] Error closing file: Broken pipe
+[vost#0:0/rawvideo @ 0x55b2a5bace40] Error submitting a packet to the muxer: Broken pipe
+[out#0/rawvideo @ 0x55b2a5ba7780] Error muxing a packet
+[out#0/rawvideo @ 0x55b2a5ba7780] Error writing trailer: Broken pipe
+[out#0/rawvideo @ 0x55b2a5ba7780] Error closing file: Broken pipe
+[vost#0:0/rawvideo @ 0x560008e37e40] Error submitting a packet to the muxer: Broken pipe
+[out#0/rawvideo @ 0x560008e32780] Error muxing a packet
+[out#0/rawvideo @ 0x560008e32780] Error writing trailer: Broken pipe
+[out#0/rawvideo @ 0x560008e32780] Error closing file: Broken pipe
+[vost#0:0/rawvideo @ 0x55794eda3600] Error submitting a packet to the muxer: Broken pipe
+[out#0/rawvideo @ 0x55794ed075c0] Error muxing a packet
+[out#0/rawvideo @ 0x55794ed075c0] Error writing trailer: Broken pipe
+[out#0/rawvideo @ 0x55794ed075c0] Error closing file: Broken pipe
+[vost#0:0/rawvideo @ 0x55b28bc0d600] Error submitting a packet to the muxer: Broken pipe
+[out#0/rawvideo @ 0x55b28bb715c0] Error muxing a packet
+[out#0/rawvideo @ 0x55b28bb715c0] Error writing trailer: Broken pipe
+[out#0/rawvideo @ 0x55b28bb715c0] Error closing file: Broken pipe
+[vost#0:0/rawvideo @ 0x55c7ffcd7600] Error submitting a packet to the muxer: Broken pipe
+[out#0/rawvideo @ 0x55c7ffc3b5c0] Error muxing a packet
+[out#0/rawvideo @ 0x55c7ffc3b5c0] Error writing trailer: Broken pipe
+[out#0/rawvideo @ 0x55c7ffc3b5c0] Error closing file: Broken pipe
+[vost#0:0/rawvideo @ 0x55f6d55d6c40] Error submitting a packet to the muxer: Broken pipe
+[out#0/rawvideo @ 0x55f6d5594e00] Error muxing a packet
+[out#0/rawvideo @ 0x55f6d5594e00] Error writing trailer: Broken pipe
+[out#0/rawvideo @ 0x55f6d5594e00] Error closing file: Broken pipe
+[vost#0:0/rawvideo @ 0x561c99dbac40] Error submitting a packet to the muxer: Broken pipe
+[out#0/rawvideo @ 0x561c99d78e00] Error muxing a packet
+[out#0/rawvideo @ 0x561c99d78e00] Error writing trailer: Broken pipe
+[out#0/rawvideo @ 0x561c99d78e00] Error closing file: Broken pipe
+  ускорена до x1.12: «а там новое сообщение от клиента.»
+  ускорена до x1.18: «Я его уже видел.»
+  ускорена до x1.16: «Я всё понял, когда увидел экран его телефона.»
+  голос: пик 0.834, NaN 0
+  эффекты: пик 0.540, NaN 0
+  подложка: пик 0.054, NaN 0
+  микс: пик 0.891, NaN 0
+Готово: out/kurer_s2_film.mp4  173.9 с, 5217 кадров

@@ -3,3 +3,7 @@ shorts/*.mp4
 shorts/**/*.webm
 shorts/**/*.mkv
 __pycache__/
+s2/src/*.mp4
+s2/out/*.mp4
+s2/music/
+s2/work/*.wav

@@ -1,0 +1,56 @@
+{
+ "file": "p3_tiktok.mp4",
+ "duration": 39.3,
+ "changes": 10,
+ "changes_per_sec": 0.25,
+ "avg_hold_sec": 3.57,
+ "max_hold_sec": 8.73,
+ "types": {
+  "cut": 5,
+  "dissolve": 0,
+  "fast-move": 5
+ },
+ "first_change_at": 3.53,
+ "events": [
+  {
+   "t": 3.53,
+   "type": "cut"
+  },
+  {
+   "t": 3.87,
+   "type": "fast-move"
+  },
+  {
+   "t": 12.33,
+   "type": "cut"
+  },
+  {
+   "t": 21.03,
+   "type": "cut"
+  },
+  {
+   "t": 21.5,
+   "type": "fast-move"
+  },
+  {
+   "t": 22.57,
+   "type": "cut"
+  },
+  {
+   "t": 23.0,
+   "type": "fast-move"
+  },
+  {
+   "t": 31.73,
+   "type": "cut"
+  },
+  {
+   "t": 32.03,
+   "type": "fast-move"
+  },
+  {
+   "t": 32.73,
+   "type": "fast-move"
+  }
+ ]
+}

@@ -1,0 +1,72 @@
+{
+ "file": "p2.mp4",
+ "duration": 41.07,
+ "changes": 14,
+ "changes_per_sec": 0.34,
+ "avg_hold_sec": 2.74,
+ "max_hold_sec": 7.2,
+ "types": {
+  "cut": 7,
+  "dissolve": 0,
+  "fast-move": 7
+ },
+ "first_change_at": 7.2,
+ "events": [
+  {
+   "t": 7.2,
+   "type": "cut"
+  },
+  {
+   "t": 7.7,
+   "type": "fast-move"
+  },
+  {
+   "t": 13.93,
+   "type": "cut"
+  },
+  {
+   "t": 14.4,
+   "type": "fast-move"
+  },
+  {
+   "t": 17.5,
+   "type": "cut"
+  },
+  {
+   "t": 17.83,
+   "type": "fast-move"
+  },
+  {
+   "t": 22.3,
+   "type": "cut"
+  },
+  {
+   "t": 22.57,
+   "type": "fast-move"
+  },
+  {
+   "t": 27.77,
+   "type": "cut"
+  },
+  {
+   "t": 33.83,
+   "type": "cut"
+  },
+  {
+   "t": 34.33,
+   "type": "fast-move"
+  },
+  {
+   "t": 35.17,
+   "type": "cut"
+  },
+  {
+   "t": 35.6,
+   "type": "fast-move"
+  },
+  {
+   "t": 36.27,
+   "type": "fast-move"
+  }
+ ]
+}
