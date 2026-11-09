@@ -12,3 +12,4 @@ s3/out/*.mp4
 s3/out/*.wav
 channel_art/raw/
 s2/longform/*.mp4
+s3_e1_render.log
