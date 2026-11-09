@@ -7,3 +7,8 @@ s2/src/*.mp4
 s2/out/*.mp4
 s2/music/
 s2/work/*.wav
+s3/render/
+s3/out/*.mp4
+s3/out/*.wav
+channel_art/raw/
+s2/longform/*.mp4
