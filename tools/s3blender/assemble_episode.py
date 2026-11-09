@@ -218,10 +218,28 @@ def word_chunks(text):
     return out
 
 
-def sub_timeline(shots, starts, durs, voiced):
-    """[(t0, t1, текст)]. Тайминг внутри фразы — пропорционально длине (пока нет Whisper-слов)."""
+def asr_words(ep, sh):
+    p = os.path.join(ROOT, "s3", "work", "asr", f"{ep}_{sh['id']}_{sh['voice']}.json")
+    return json.load(open(p, encoding="utf-8")) if os.path.exists(p) else None
+
+
+def sub_timeline(shots, starts, durs, ep):
+    """[(t0, t1, текст)]. Если есть слова Whisper (transcribe_s3.py) — по ним, точно в голос;
+    иначе внутри фразы пропорционально длине слов."""
     ev = []
     for sh, t0, d in zip(shots, starts, durs):
+        words = asr_words(ep, sh)
+        if words:
+            i = 0
+            while i < len(words):
+                grp = [words[i]]
+                if len(words[i]["w"].strip(".,!?…«»—")) <= 3 and i + 1 < len(words):
+                    grp.append(words[i + 1])
+                i += len(grp)
+                a0 = t0 + grp[0]["s"]
+                a1 = t0 + (words[i]["s"] if i < len(words) else grp[-1]["e"] + 0.15)
+                ev.append((a0, a1, " ".join(g["w"] for g in grp)))
+            continue
         chunks = word_chunks(sh["text"])
         speak = d - 0.3
         total = sum(len(c) + 3 for c in chunks)
@@ -309,7 +327,7 @@ def main():
     starts = list(np.cumsum([0] + ds[:-1]))
     total = float(sum(ds))
     hits_abs = [t0 + h for s, t0 in zip(shots, starts) for h in s.get("hits", [])]
-    subs = sub_timeline(shots, starts, ds, True)
+    subs = sub_timeline(shots, starts, ds, name)
     out_dir = a.out or os.path.join(ROOT, "s3", "out")
     os.makedirs(out_dir, exist_ok=True)
     wav = os.path.join(out_dir, f"{name}.wav")
