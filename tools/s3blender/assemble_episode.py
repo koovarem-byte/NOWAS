@@ -69,6 +69,73 @@ def phone_ui(kind, spec, t, dur, w, h):
         center(cy - 60 * s, "?", F(110), (255, 255, 255))
         center(h * 0.56, spec.get("text", "Поддержка"), F(54), (255, 255, 255))
         center(h * 0.63, "бот · был в сети давно", F(28, False), (160, 160, 170))
+    elif kind == "call":
+        center(h * 0.18, spec.get("text", "Неизвестный"), F(48), (255, 255, 255))
+        center(h * 0.25, "мобильный · " + ("00:%02d" % int(t)), F(30, False), (170, 170, 180))
+        for i, (col, sym) in enumerate((((230, 40, 50), "✕"), ((40, 190, 90), "✓"))):
+            cx = w * (0.28 + 0.44 * i); cy = h * 0.8; r = 52 * s
+            d.ellipse([cx - r, cy - r, cx + r, cy + r], fill=col)
+    elif kind == "order":
+        center(40 * s, "Заказ №34", F(44), (255, 255, 255))
+        rows = [("Адрес", "ул. Лесная, 12, кв. 71"), ("Подъезд", "3, этаж 7"),
+                ("Комментарий", "код домофона 147В"), ("", "оставить у двери")]
+        for i, (k, v) in enumerate(rows):
+            y = 130 * s + i * 105 * s
+            hl = i >= 2 and t > dur * 0.4
+            d.rounded_rectangle([24 * s, y, w - 24 * s, y + 92 * s], int(14 * s), fill=(90, 30, 30) if hl else (34, 38, 48))
+            d.text((44 * s, y + 10 * s), k, font=F(24, False), fill=(170, 170, 180))
+            d.text((44 * s, y + 42 * s), v, font=F(32), fill=(255, 255, 255))
+    elif kind == "dbrow":
+        d.text((24 * s, 30 * s), "база_поддержка.csv", font=F(30, False), fill=(120, 220, 140))
+        for i in range(12):
+            y = 90 * s + i * 62 * s
+            mine = i == 6
+            d.rectangle([16 * s, y, w - 16 * s, y + 54 * s], fill=(70, 20, 25) if mine else (24, 28, 34))
+            txt = "Лесная 12 · 3п · 147В" if mine else f"адрес {100 + i * 7} · {i % 5 + 1}п · {200 + i * 13}К"
+            d.text((28 * s, y + 12 * s), txt, font=F(26, False), fill=(255, 255, 255) if mine else (140, 150, 160))
+            if mine and t > dur * 0.3:
+                d.text((w - 140 * s, y + 8 * s), "№12", font=F(34), fill=(255, 70, 60))
+    elif kind == "credit":
+        center(40 * s, "Кредитная история", F(40), (255, 255, 255))
+        n = spec.get("count", 10)
+        for i in range(n):
+            y = 110 * s + i * 66 * s
+            new = i == n - 1
+            d.rounded_rectangle([24 * s, y, w - 24 * s, y + 56 * s], int(12 * s), fill=(90, 25, 30) if new else (34, 38, 48))
+            d.text((44 * s, y + 13 * s), f"{i + 1}. Микрозаём · " + ("сегодня 02:47" if new else "3 дня назад"),
+                   font=F(26, not new and False or new), fill=(255, 255, 255))
+    elif kind == "nosignal":
+        center(h * 0.08, "Нет сети", F(34, False), (255, 90, 70))
+        if spec.get("sms", True) and t < dur * 0.5:
+            d.rounded_rectangle([24 * s, h * 0.2, w - 24 * s, h * 0.36], int(16 * s), fill=(40, 44, 54))
+            d.text((44 * s, h * 0.215), "SMS · Оператор", font=F(24, False), fill=(170, 170, 180))
+            d.text((44 * s, h * 0.26), "Ваша SIM-карта заменена", font=F(30), fill=(255, 255, 255))
+        else:
+            center(h * 0.42, "SOS", F(140), (255, 70, 60))
+    elif kind == "proxy":
+        im.paste((240, 238, 230, 255), [0, 0, w, h])
+        center(60 * s, "ДОВЕРЕННОСТЬ", F(44), (20, 20, 20))
+        for i in range(9):
+            y = 160 * s + i * 52 * s
+            d.line([40 * s, y, w - 40 * s - (i % 3) * 60 * s, y], fill=(150, 150, 150), width=max(2, int(4 * s)))
+        d.text((40 * s, h * 0.7), "Подпись:", font=F(30, False), fill=(20, 20, 20))
+        pts = [(220 * s + k * 18 * s, h * 0.72 + (12 * s if k % 2 else -10 * s)) for k in range(14)]
+        d.line(pts, fill=(30, 40, 160), width=max(2, int(4 * s)))
+        if t > dur * 0.5:
+            d.ellipse([w * 0.55, h * 0.64, w * 0.95, h * 0.8], outline=(230, 30, 40), width=int(8 * s))
+    elif kind == "simban":
+        center(60 * s, "Самозапрет", F(48), (255, 255, 255))
+        center(122 * s, "на договоры связи без вас", F(32, False), (190, 190, 200))
+        on = t > dur * 0.35
+        y = h * 0.4
+        d.rounded_rectangle([30 * s, y, w - 30 * s, y + 100 * s], int(16 * s), fill=(34, 38, 48))
+        d.text((54 * s, y + 30 * s), "Новые SIM-карты", font=F(32, False), fill=(235, 235, 240))
+        tx = w - 150 * s
+        d.rounded_rectangle([tx, y + 26 * s, tx + 100 * s, y + 74 * s], int(24 * s), fill=(40, 190, 90) if on else (80, 80, 90))
+        kx = tx + (54 * s if on else 4 * s)
+        d.ellipse([kx, y + 30 * s, kx + 42 * s, y + 72 * s], fill=(255, 255, 255))
+        if on:
+            center(h * 0.62, "Установлен ✓", F(40), (60, 220, 110))
     elif kind == "selfban":
         center(60 * s, "Самозапрет", F(48), (255, 255, 255))
         center(122 * s, "на кредиты и займы", F(32, False), (190, 190, 200))

@@ -457,7 +457,31 @@ def set_stairwell():
     haze_box(20, 0.02, (1.0, 0.85, 0.7))
 
 
+def set_phone_shop():
+    """Салон связи: светлая плитка, стойка, монитор с записью камеры, полки с коробками, холодный свет."""
+    world_sky((0.02, 0.02, 0.03), 0.2)
+    add("plane", "PFloor", (0, 0, 0), (5, 5, 1), material=tile_mat("PTile", (0.75, 0.75, 0.78), (0.68, 0.68, 0.72), 10))
+    add("cube", "PBack", (0, 3.5, 1.6), (5, 0.05, 1.6), material=mat("PWall", (0.85, 0.85, 0.88), 0.8, noise=0.15, noise_scale=20))
+    add("cube", "PRight", (3.2, 0, 1.6), (0.05, 5, 1.6), material=mat("PWall", (0.85, 0.85, 0.88)))
+    add("cube", "PLeft", (-3.6, 0, 1.6), (0.05, 5, 1.6), material=mat("PWall", (0.85, 0.85, 0.88)))
+    add("cube", "PBrand", (0, 3.42, 2.6), (1.6, 0.03, 0.25), material=mat("PBrandStripe", (0.9, 0.15, 0.2), 0.4, emit=1.5))
+    counter = add("cube", "Counter", (0, 1.6, 0.55), (1.5, 0.35, 0.55), material=mat("CounterWhite", (0.92, 0.92, 0.94), 0.3))
+    bevel(counter, 0.03)
+    add("cube", "CounterTop", (0, 1.6, 1.12), (1.55, 0.4, 0.03), material=mat("CounterDark", (0.08, 0.08, 0.1), 0.2))
+    mon = add("cube", "Monitor", (0.7, 1.55, 1.45), (0.32, 0.03, 0.2), rot=(0, 0, 0.35), material=mat("MonBody", (0.03, 0.03, 0.03), 0.3))
+    add("plane", "MonScr", (0.7 - 0.012, 1.52 - 0.0, 1.45), (0.29, 1, 0.17), rot=(math.pi / 2, 0, 0.35),
+        material=mat("MonGlow", (0.45, 0.6, 0.75), 0.2, emit=2.0))
+    import random
+    rnd = random.Random(8)
+    for i in range(14):
+        add("cube", f"Shelf{i}", (-3.0 + (i % 7) * 1.0, 3.3, 0.8 + (i // 7) * 0.6), (0.18, 0.12, 0.22),
+            material=mat(f"BoxC{i % 3}", [(0.9, 0.9, 0.95), (0.15, 0.15, 0.18), (0.9, 0.2, 0.25)][rnd.randrange(3)], 0.4))
+    for x in (-1.6, 1.6):
+        lamp((x, 1.0, 3.0), 300, (0.9, 0.95, 1.0), 0.0, "AREA").scale = (1.5, 0.4, 1)
+
+
 SETS = {
+    "phone_shop": set_phone_shop,
     "courtyard_night": set_courtyard_night,
     "bedroom_dark": set_bedroom_dark,
     "elevator": set_elevator,
