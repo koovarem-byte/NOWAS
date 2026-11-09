@@ -1,0 +1,120 @@
+{
+ "file": "kurer_s2_p5.mp4",
+ "duration": 60.63,
+ "changes": 26,
+ "changes_per_sec": 0.43,
+ "avg_hold_sec": 2.25,
+ "max_hold_sec": 13.9,
+ "types": {
+  "cut": 13,
+  "dissolve": 0,
+  "fast-move": 13
+ },
+ "first_change_at": 2.4,
+ "events": [
+  {
+   "t": 2.4,
+   "type": "cut"
+  },
+  {
+   "t": 2.67,
+   "type": "fast-move"
+  },
+  {
+   "t": 3.3,
+   "type": "cut"
+  },
+  {
+   "t": 3.57,
+   "type": "fast-move"
+  },
+  {
+   "t": 8.0,
+   "type": "cut"
+  },
+  {
+   "t": 8.37,
+   "type": "fast-move"
+  },
+  {
+   "t": 9.93,
+   "type": "cut"
+  },
+  {
+   "t": 10.27,
+   "type": "fast-move"
+  },
+  {
+   "t": 14.57,
+   "type": "cut"
+  },
+  {
+   "t": 15.07,
+   "type": "fast-move"
+  },
+  {
+   "t": 17.5,
+   "type": "cut"
+  },
+  {
+   "t": 18.03,
+   "type": "fast-move"
+  },
+  {
+   "t": 20.8,
+   "type": "cut"
+  },
+  {
+   "t": 21.3,
+   "type": "fast-move"
+  },
+  {
+   "t": 29.47,
+   "type": "cut"
+  },
+  {
+   "t": 29.73,
+   "type": "fast-move"
+  },
+  {
+   "t": 43.63,
+   "type": "cut"
+  },
+  {
+   "t": 44.1,
+   "type": "fast-move"
+  },
+  {
+   "t": 45.33,
+   "type": "cut"
+  },
+  {
+   "t": 45.6,
+   "type": "fast-move"
+  },
+  {
+   "t": 47.17,
+   "type": "cut"
+  },
+  {
+   "t": 47.43,
+   "type": "fast-move"
+  },
+  {
+   "t": 49.6,
+   "type": "cut"
+  },
+  {
+   "t": 49.87,
+   "type": "fast-move"
+  },
+  {
+   "t": 56.47,
+   "type": "cut"
+  },
+  {
+   "t": 56.73,
+   "type": "fast-move"
+  }
+ ]
+}

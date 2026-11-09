@@ -1,0 +1,164 @@
+{
+ "file": "03_VID_20261109_220047_905.mp4",
+ "duration": 56.93,
+ "changes": 37,
+ "changes_per_sec": 0.65,
+ "avg_hold_sec": 1.5,
+ "max_hold_sec": 7.73,
+ "types": {
+  "cut": 4,
+  "dissolve": 7,
+  "fast-move": 26
+ },
+ "first_change_at": 4.23,
+ "events": [
+  {
+   "t": 4.23,
+   "type": "cut"
+  },
+  {
+   "t": 4.7,
+   "type": "fast-move"
+  },
+  {
+   "t": 12.43,
+   "type": "fast-move"
+  },
+  {
+   "t": 12.93,
+   "type": "fast-move"
+  },
+  {
+   "t": 14.9,
+   "type": "fast-move"
+  },
+  {
+   "t": 15.4,
+   "type": "fast-move"
+  },
+  {
+   "t": 16.97,
+   "type": "fast-move"
+  },
+  {
+   "t": 18.83,
+   "type": "fast-move"
+  },
+  {
+   "t": 19.33,
+   "type": "cut"
+  },
+  {
+   "t": 19.7,
+   "type": "fast-move"
+  },
+  {
+   "t": 21.33,
+   "type": "fast-move"
+  },
+  {
+   "t": 21.9,
+   "type": "fast-move"
+  },
+  {
+   "t": 22.7,
+   "type": "fast-move"
+  },
+  {
+   "t": 23.2,
+   "type": "fast-move"
+  },
+  {
+   "t": 25.37,
+   "type": "fast-move"
+  },
+  {
+   "t": 26.77,
+   "type": "dissolve"
+  },
+  {
+   "t": 27.27,
+   "type": "dissolve"
+  },
+  {
+   "t": 28.53,
+   "type": "dissolve"
+  },
+  {
+   "t": 29.07,
+   "type": "fast-move"
+  },
+  {
+   "t": 29.57,
+   "type": "fast-move"
+  },
+  {
+   "t": 32.27,
+   "type": "fast-move"
+  },
+  {
+   "t": 36.37,
+   "type": "fast-move"
+  },
+  {
+   "t": 40.67,
+   "type": "dissolve"
+  },
+  {
+   "t": 42.0,
+   "type": "fast-move"
+  },
+  {
+   "t": 42.9,
+   "type": "cut"
+  },
+  {
+   "t": 43.37,
+   "type": "fast-move"
+  },
+  {
+   "t": 44.57,
+   "type": "fast-move"
+  },
+  {
+   "t": 45.1,
+   "type": "fast-move"
+  },
+  {
+   "t": 46.4,
+   "type": "cut"
+  },
+  {
+   "t": 46.73,
+   "type": "fast-move"
+  },
+  {
+   "t": 47.23,
+   "type": "fast-move"
+  },
+  {
+   "t": 48.17,
+   "type": "dissolve"
+  },
+  {
+   "t": 49.77,
+   "type": "dissolve"
+  },
+  {
+   "t": 51.73,
+   "type": "dissolve"
+  },
+  {
+   "t": 52.63,
+   "type": "fast-move"
+  },
+  {
+   "t": 54.63,
+   "type": "fast-move"
+  },
+  {
+   "t": 55.13,
+   "type": "fast-move"
+  }
+ ]
+}

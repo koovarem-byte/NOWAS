@@ -366,18 +366,22 @@ def summary(reports, outdir):
     (outdir / "summary.md").write_text("\n".join(L) + "\n")
 
 
+def _job(args):
+    f, outdir = args
+    r = analyze(f, outdir)
+    r["_src"] = str(f)
+    print(f"✓ {f.name}: {r['frames_analyzed']} кадров, {r['shots_count']} планов, {r['cuts_per_sec']} склеек/с", flush=True)
+    return r
+
+
 def main():
+    from multiprocessing import Pool
     target = Path(sys.argv[1] if len(sys.argv) > 1 else "shorts")
     files = sorted(target.glob("*.mp4")) if target.is_dir() else [target]
     outdir = (target if target.is_dir() else target.parent) / "analysis"
     outdir.mkdir(exist_ok=True)
-    reports = []
-    for f in files:
-        print(f"→ {f.name}", flush=True)
-        r = analyze(f, outdir)
-        r["_src"] = str(f)
-        reports.append(r)
-        print(f"   {r['frames_analyzed']} кадров, {r['shots_count']} планов, {r['cuts_per_sec']} склеек/с", flush=True)
+    with Pool(min(len(files), os.cpu_count() or 1) or 1) as pool:
+        reports = pool.map(_job, [(f, outdir) for f in files])
     if reports:
         summary(reports, outdir)
         print(f"Готово: {outdir}/summary.md")

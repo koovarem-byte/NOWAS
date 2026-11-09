@@ -1,0 +1,200 @@
+{
+ "file": "08_VID_20261109_220713_864.mp4",
+ "duration": 60.5,
+ "changes": 46,
+ "changes_per_sec": 0.76,
+ "avg_hold_sec": 1.29,
+ "max_hold_sec": 4.63,
+ "types": {
+  "cut": 8,
+  "dissolve": 16,
+  "fast-move": 22
+ },
+ "first_change_at": 0.13,
+ "events": [
+  {
+   "t": 0.13,
+   "type": "cut"
+  },
+  {
+   "t": 0.5,
+   "type": "fast-move"
+  },
+  {
+   "t": 1.27,
+   "type": "fast-move"
+  },
+  {
+   "t": 2.17,
+   "type": "fast-move"
+  },
+  {
+   "t": 2.93,
+   "type": "fast-move"
+  },
+  {
+   "t": 4.53,
+   "type": "cut"
+  },
+  {
+   "t": 4.97,
+   "type": "fast-move"
+  },
+  {
+   "t": 5.9,
+   "type": "dissolve"
+  },
+  {
+   "t": 6.47,
+   "type": "dissolve"
+  },
+  {
+   "t": 7.5,
+   "type": "dissolve"
+  },
+  {
+   "t": 8.07,
+   "type": "fast-move"
+  },
+  {
+   "t": 10.37,
+   "type": "fast-move"
+  },
+  {
+   "t": 14.27,
+   "type": "dissolve"
+  },
+  {
+   "t": 16.1,
+   "type": "cut"
+  },
+  {
+   "t": 16.63,
+   "type": "fast-move"
+  },
+  {
+   "t": 17.53,
+   "type": "fast-move"
+  },
+  {
+   "t": 19.23,
+   "type": "cut"
+  },
+  {
+   "t": 19.63,
+   "type": "fast-move"
+  },
+  {
+   "t": 20.3,
+   "type": "fast-move"
+  },
+  {
+   "t": 21.4,
+   "type": "cut"
+  },
+  {
+   "t": 21.73,
+   "type": "fast-move"
+  },
+  {
+   "t": 24.5,
+   "type": "dissolve"
+  },
+  {
+   "t": 25.2,
+   "type": "fast-move"
+  },
+  {
+   "t": 25.7,
+   "type": "cut"
+  },
+  {
+   "t": 26.0,
+   "type": "fast-move"
+  },
+  {
+   "t": 26.53,
+   "type": "dissolve"
+  },
+  {
+   "t": 28.83,
+   "type": "fast-move"
+  },
+  {
+   "t": 33.43,
+   "type": "fast-move"
+  },
+  {
+   "t": 33.93,
+   "type": "fast-move"
+  },
+  {
+   "t": 36.83,
+   "type": "fast-move"
+  },
+  {
+   "t": 37.33,
+   "type": "dissolve"
+  },
+  {
+   "t": 39.8,
+   "type": "dissolve"
+  },
+  {
+   "t": 41.83,
+   "type": "dissolve"
+  },
+  {
+   "t": 42.9,
+   "type": "fast-move"
+  },
+  {
+   "t": 47.53,
+   "type": "cut"
+  },
+  {
+   "t": 47.8,
+   "type": "fast-move"
+  },
+  {
+   "t": 49.03,
+   "type": "dissolve"
+  },
+  {
+   "t": 49.8,
+   "type": "fast-move"
+  },
+  {
+   "t": 51.17,
+   "type": "dissolve"
+  },
+  {
+   "t": 51.67,
+   "type": "dissolve"
+  },
+  {
+   "t": 52.57,
+   "type": "dissolve"
+  },
+  {
+   "t": 54.03,
+   "type": "cut"
+  },
+  {
+   "t": 54.43,
+   "type": "fast-move"
+  },
+  {
+   "t": 55.57,
+   "type": "dissolve"
+  },
+  {
+   "t": 57.77,
+   "type": "dissolve"
+  },
+  {
+   "t": 59.2,
+   "type": "dissolve"
+  }
+ ]
+}

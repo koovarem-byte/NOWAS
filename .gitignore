@@ -1,4 +1,5 @@
+shorts/**/*.mp4
 shorts/*.mp4
-shorts/*.webm
-shorts/*.mkv
+shorts/**/*.webm
+shorts/**/*.mkv
 __pycache__/

@@ -1,0 +1,104 @@
+{
+ "file": "13_VID_20261109_220807_860.mp4",
+ "duration": 45.0,
+ "changes": 22,
+ "changes_per_sec": 0.49,
+ "avg_hold_sec": 1.96,
+ "max_hold_sec": 7.4,
+ "types": {
+  "cut": 3,
+  "dissolve": 10,
+  "fast-move": 9
+ },
+ "first_change_at": 7.4,
+ "events": [
+  {
+   "t": 7.4,
+   "type": "dissolve"
+  },
+  {
+   "t": 9.33,
+   "type": "dissolve"
+  },
+  {
+   "t": 9.87,
+   "type": "dissolve"
+  },
+  {
+   "t": 11.9,
+   "type": "cut"
+  },
+  {
+   "t": 12.17,
+   "type": "fast-move"
+  },
+  {
+   "t": 13.13,
+   "type": "dissolve"
+  },
+  {
+   "t": 19.43,
+   "type": "fast-move"
+  },
+  {
+   "t": 20.1,
+   "type": "cut"
+  },
+  {
+   "t": 20.43,
+   "type": "fast-move"
+  },
+  {
+   "t": 22.13,
+   "type": "dissolve"
+  },
+  {
+   "t": 22.63,
+   "type": "dissolve"
+  },
+  {
+   "t": 24.23,
+   "type": "fast-move"
+  },
+  {
+   "t": 26.0,
+   "type": "dissolve"
+  },
+  {
+   "t": 28.0,
+   "type": "cut"
+  },
+  {
+   "t": 28.27,
+   "type": "fast-move"
+  },
+  {
+   "t": 33.1,
+   "type": "fast-move"
+  },
+  {
+   "t": 33.63,
+   "type": "fast-move"
+  },
+  {
+   "t": 37.8,
+   "type": "dissolve"
+  },
+  {
+   "t": 38.47,
+   "type": "dissolve"
+  },
+  {
+   "t": 39.7,
+   "type": "dissolve"
+  },
+  {
+   "t": 41.13,
+   "type": "fast-move"
+  },
+  {
+   "t": 43.63,
+   "type": "fast-move"
+  }
+ ]
+}

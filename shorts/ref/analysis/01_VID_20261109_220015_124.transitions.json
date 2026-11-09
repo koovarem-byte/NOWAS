@@ -1,0 +1,88 @@
+{
+ "file": "01_VID_20261109_220015_124.mp4",
+ "duration": 47.1,
+ "changes": 18,
+ "changes_per_sec": 0.38,
+ "avg_hold_sec": 2.48,
+ "max_hold_sec": 10.57,
+ "types": {
+  "cut": 2,
+  "dissolve": 10,
+  "fast-move": 6
+ },
+ "first_change_at": 0.7,
+ "events": [
+  {
+   "t": 0.7,
+   "type": "dissolve"
+  },
+  {
+   "t": 3.5,
+   "type": "cut"
+  },
+  {
+   "t": 3.93,
+   "type": "fast-move"
+  },
+  {
+   "t": 5.63,
+   "type": "dissolve"
+  },
+  {
+   "t": 6.47,
+   "type": "dissolve"
+  },
+  {
+   "t": 6.97,
+   "type": "dissolve"
+  },
+  {
+   "t": 8.7,
+   "type": "dissolve"
+  },
+  {
+   "t": 10.3,
+   "type": "fast-move"
+  },
+  {
+   "t": 11.67,
+   "type": "fast-move"
+  },
+  {
+   "t": 14.3,
+   "type": "fast-move"
+  },
+  {
+   "t": 24.87,
+   "type": "dissolve"
+  },
+  {
+   "t": 29.37,
+   "type": "dissolve"
+  },
+  {
+   "t": 32.13,
+   "type": "fast-move"
+  },
+  {
+   "t": 35.3,
+   "type": "cut"
+  },
+  {
+   "t": 35.67,
+   "type": "fast-move"
+  },
+  {
+   "t": 38.63,
+   "type": "dissolve"
+  },
+  {
+   "t": 41.03,
+   "type": "dissolve"
+  },
+  {
+   "t": 43.3,
+   "type": "dissolve"
+  }
+ ]
+}

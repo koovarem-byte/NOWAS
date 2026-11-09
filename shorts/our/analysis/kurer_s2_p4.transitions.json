@@ -1,0 +1,160 @@
+{
+ "file": "kurer_s2_p4.mp4",
+ "duration": 40.37,
+ "changes": 36,
+ "changes_per_sec": 0.89,
+ "avg_hold_sec": 1.09,
+ "max_hold_sec": 3.37,
+ "types": {
+  "cut": 15,
+  "dissolve": 0,
+  "fast-move": 21
+ },
+ "first_change_at": 3.37,
+ "events": [
+  {
+   "t": 3.37,
+   "type": "cut"
+  },
+  {
+   "t": 3.8,
+   "type": "fast-move"
+  },
+  {
+   "t": 4.37,
+   "type": "cut"
+  },
+  {
+   "t": 4.87,
+   "type": "fast-move"
+  },
+  {
+   "t": 6.6,
+   "type": "cut"
+  },
+  {
+   "t": 7.03,
+   "type": "fast-move"
+  },
+  {
+   "t": 8.97,
+   "type": "cut"
+  },
+  {
+   "t": 9.27,
+   "type": "fast-move"
+  },
+  {
+   "t": 12.27,
+   "type": "cut"
+  },
+  {
+   "t": 12.73,
+   "type": "fast-move"
+  },
+  {
+   "t": 14.73,
+   "type": "cut"
+  },
+  {
+   "t": 15.27,
+   "type": "fast-move"
+  },
+  {
+   "t": 17.5,
+   "type": "cut"
+  },
+  {
+   "t": 17.93,
+   "type": "fast-move"
+  },
+  {
+   "t": 20.57,
+   "type": "cut"
+  },
+  {
+   "t": 21.1,
+   "type": "fast-move"
+  },
+  {
+   "t": 21.9,
+   "type": "cut"
+  },
+  {
+   "t": 22.3,
+   "type": "fast-move"
+  },
+  {
+   "t": 24.9,
+   "type": "cut"
+  },
+  {
+   "t": 25.33,
+   "type": "fast-move"
+  },
+  {
+   "t": 25.93,
+   "type": "cut"
+  },
+  {
+   "t": 26.43,
+   "type": "fast-move"
+  },
+  {
+   "t": 28.2,
+   "type": "cut"
+  },
+  {
+   "t": 28.67,
+   "type": "fast-move"
+  },
+  {
+   "t": 32.0,
+   "type": "cut"
+  },
+  {
+   "t": 32.27,
+   "type": "fast-move"
+  },
+  {
+   "t": 34.43,
+   "type": "cut"
+  },
+  {
+   "t": 34.73,
+   "type": "fast-move"
+  },
+  {
+   "t": 35.67,
+   "type": "fast-move"
+  },
+  {
+   "t": 36.17,
+   "type": "cut"
+  },
+  {
+   "t": 36.83,
+   "type": "fast-move"
+  },
+  {
+   "t": 37.47,
+   "type": "fast-move"
+  },
+  {
+   "t": 38.17,
+   "type": "fast-move"
+  },
+  {
+   "t": 38.9,
+   "type": "fast-move"
+  },
+  {
+   "t": 39.6,
+   "type": "fast-move"
+  },
+  {
+   "t": 40.3,
+   "type": "fast-move"
+  }
+ ]
+}
